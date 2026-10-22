@@ -1,8 +1,10 @@
+import streamlit as st
 import socket
 import requests
 
 HOST = "hyd-app-db.rid.go.th"
 
+st.title("ทดสอบการเชื่อมต่อ RID API")
 st.write("กำลังตรวจสอบการเชื่อมต่อ API...")
 
 try:
@@ -10,7 +12,7 @@ try:
     st.write("DNS IP:", ip)
 
     with socket.create_connection((HOST, 443), timeout=10) as sock:
-        st.write("TCP 443: สำเร็จ")
+        st.success("TCP 443: สำเร็จ")
         st.write("ปลายทาง:", sock.getpeername())
 
 except Exception as e:
