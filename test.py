@@ -14,8 +14,7 @@ st.title("🌊 ทดสอบ API ระดับน้ำล้นตลิ่
 st.write("ตรวจสอบการเชื่อมต่อจาก Render ไปยังกรมชลประทาน")
 
 API_URL = (
-    "https://hyd-app-db.rid.go.th/"
-    "webservice/getWaterLevelListReportOverflowWaterLevel.ashx"
+    "https://hyd-app-db.rid.go.th/webservice/getWaterLevelListReportMonitorWaterLevel.ashx"
 )
 
 HOST = "hyd-app-db.rid.go.th"
